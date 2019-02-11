@@ -1,5 +1,5 @@
-s = 'foobar';
-
+#s = 'foobar';
+s = 'hello from the other side'
 
 def encrypt(letter):
     if letter == 'a':
@@ -54,6 +54,8 @@ def encrypt(letter):
         return 'z';
     if letter == 'z':
         return 'a';
+    if letter == ' ':
+        return ' '
     # if letter == 'b':
     #     return 'c'
     # if letter == 'b':
@@ -137,6 +139,8 @@ def decrypt(letter):
         return 'y';
     if letter == 'a':
         return 'z';
+    if letter == ' ':
+        return ' '
 
 
 def Main():
@@ -147,7 +151,7 @@ def Main():
     for letter in s:
         #print (letter)
         a = encrypt(letter)
-        print (a)
+        print (a), # print on one line 
         b.append(a)
     print "\n"
     for letter in b:
@@ -160,8 +164,7 @@ def Main():
         c = decrypt(letter)
         print (c)
     print "\n"
-    for letter in b:
-        print (c)
+
 
 
 if __name__ == '__main__':
