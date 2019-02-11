@@ -151,18 +151,18 @@ def Main():
     for letter in s:
         #print (letter)
         a = encrypt(letter)
-        print (a), # print on one line 
+        #print (a), # print on one line
         b.append(a)
     print "\n"
     for letter in b:
-        print (letter)
-    print b
+        print (letter),
+    #print "\nprinting b "+ str(b)
 
     c=[]
-    print "\ndecrypt\n"
+    print "\n\ndecrypt\n"
     for letter in b:
         c = decrypt(letter)
-        print (c)
+        print (c),
     print "\n"
 
 
