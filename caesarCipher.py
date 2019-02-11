@@ -1,7 +1,7 @@
 #s = 'foobar';
 s = 'hello from the other side'
 
-def encrypt(letter):
+def encrypt(letter):        #this function encrypts text one letter by one letter
     if letter == 'a':
         return 'b';
     if letter == 'b':
@@ -56,37 +56,30 @@ def encrypt(letter):
         return 'a';
     if letter == ' ':
         return ' '
-    # if letter == 'b':
-    #     return 'c'
-    # if letter == 'b':
-    #     return 'q'
-    # if letter == 'a':
-    #     return 'z'
-    # if letter == 'r':
-    #     return 'w'
-    # if letter == 'f':
-    #     return 'a'
-    # if letter == 'o':
-    #     return 'c'
-    # if letter == 'b':
-    #     return 'q'
-    # if letter == 'a':
-    #     return 'z'
-    # if letter == 'r':
-    #     return 'w'
-    # if letter == 'f':
-    #     return 'a'
-    # if letter == 'o':
-    #     return 'c'
-    # if letter == 'b':
-    #     return 'q'
-    # if letter == 'a':
-    #     return 'z'
-    # if letter == 'r':
-    #     return 'w'
+    if letter == '1':  #number encryption 1,0 2,9 3,8 ... 9,2 0,1
+        return '0'
+    if letter == '2':
+        return '9'
+    if letter == '3':
+        return '8'
+    if letter == '4':
+        return '7'
+    if letter == '5':
+        return '6'
+    if letter == '6':
+        return '5'
+    if letter == '7':
+        return '4'
+    if letter == '8':
+        return '3'
+    if letter == '9':
+        return '2'
+    if letter == '0':
+        return '1'
 
 
-def decrypt(letter):
+
+def decrypt(letter):        #this function decrypts text one letter by one letter
     if letter == 'b':
         return 'a';
     if letter == 'c':
@@ -141,6 +134,27 @@ def decrypt(letter):
         return 'z';
     if letter == ' ':
         return ' '
+    if letter == '0':  #number decryption 1,0 2,9 3,8 ... 9,2 0,1
+        return '1'
+    if letter == '9':
+        return '2'
+    if letter == '8':
+        return '3'
+    if letter == '7':
+        return '4'
+    if letter == '6':
+        return '5'
+    if letter == '5':
+        return '6'
+    if letter == '4':
+        return '7'
+    if letter == '3':
+        return '8'
+    if letter == '2':
+        return '9'
+    if letter == '1':
+        return '0'
+
 
 
 def Main():
